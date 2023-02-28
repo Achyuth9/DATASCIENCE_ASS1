@@ -25,3 +25,5 @@ table(spfile$race.ethnicity)
 nrows <- nrow(spfile)
 percent_group <- table(spfile$race.ethnicity)/n * 100
 pie(percent_group, main = "Groups PieChart", col = c("pink","blue","darkgreen","red","gold"),label=paste(c("group A - ","group B - ","group C - ","group D - ","group E - "),percent_group, "%"))
+
+
