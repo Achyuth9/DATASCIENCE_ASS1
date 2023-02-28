@@ -18,9 +18,11 @@ hist(MYFILE$reading.score, main="Histogram of reading score",col='blue')
 ###qq norm 
 qqnorm(MYFILE$math.score)
 
+###READING CLEAN STUDENTS PERFORMANCE FILE AND VISUALIZING THE DATA
+
+spfile <- read.csv('~/Desktop/ACHYUTHAYINALA/Question1/clean_data/Cleaned_StudentsPerformance.csv')
 
 ###PieChart
-spfile <- read.csv('~/Desktop/ACHYUTHAYINALA/Question1/clean_data/Cleaned_StudentsPerformance.csv')
 table(spfile$race.ethnicity)
 nrows <- nrow(spfile)
 percent_group <- table(spfile$race.ethnicity)/n * 100
@@ -30,4 +32,9 @@ pie(percent_group, main = "Groups PieChart", col = c("pink","blue","darkgreen","
 ###ggplot
 data_frame<-data.frame(spfile$lunch,spfile$parental.level.of.education)
 ggplot(data_frame,aes(spfile$lunch))+ geom_bar(aes(fill = spfile$parental.level.of.education), position = "dodge")
+
+
+###histogram
+hist(spfile$math.score, main="Histogram of Students math score",col='green',ylim = c(0,300))
+
 
