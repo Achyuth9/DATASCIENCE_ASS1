@@ -2,3 +2,6 @@
 
 
 **Analysis:**
+From the above graph we can tell that, there are more number of parents that belongs to some high school level of education Since the brown bar is the highest in the figure.
+
+We can also tell that Very less number of parents have master's level of education
