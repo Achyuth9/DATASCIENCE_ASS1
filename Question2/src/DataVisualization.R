@@ -27,3 +27,7 @@ percent_group <- table(spfile$race.ethnicity)/n * 100
 pie(percent_group, main = "Groups PieChart", col = c("pink","blue","darkgreen","red","gold"),label=paste(c("group A - ","group B - ","group C - ","group D - ","group E - "),percent_group, "%"))
 
 
+###ggplot
+data_frame<-data.frame(spfile$lunch,spfile$parental.level.of.education)
+ggplot(data_frame,aes(spfile$lunch))+ geom_bar(aes(fill = spfile$parental.level.of.education), position = "dodge")
+
