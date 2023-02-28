@@ -1,4 +1,4 @@
-clean_people_data <- read.csv("~/Desktop/SANGITA/MY ASSIGNMENTS/PDS/Ass1/question1/clean_data/clean_people_data.csv")
+clean_people_data <- read.csv("~/Desktop/ACHYUTHAYINALA/Question1/clean_data/CLEANDATA.csv")
 t_test_result <- with(clean_people_data, t.test(Age~Frailty))
 t_test_result
-capture.output(t_test_result, file="~/Desktop/SANGITA/MY ASSIGNMENTS/PDS/Ass1/question1/results/test_results.txt")
+capture.output(t_test_result, file="~/Desktop/ACHYUTHAYINALA/Question1/results/Test_Output.txt")
