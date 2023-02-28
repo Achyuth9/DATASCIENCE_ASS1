@@ -19,6 +19,7 @@ hist(MYFILE$reading.score, main="Histogram of reading score",col='blue')
 qqnorm(MYFILE$math.score)
 
 
+###PieChart
 spfile <- read.csv('~/Desktop/ACHYUTHAYINALA/Question1/clean_data/Cleaned_StudentsPerformance.csv')
 table(spfile$race.ethnicity)
 nrows <- nrow(spfile)
