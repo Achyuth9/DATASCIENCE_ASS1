@@ -37,4 +37,8 @@ ggplot(data_frame,aes(spfile$lunch))+ geom_bar(aes(fill = spfile$parental.level.
 ###histogram
 hist(spfile$math.score, main="Histogram of Students math score",col='green',ylim = c(0,300))
 
+###barplot
+myvar <- sample(c(spfile$parental.level.of.education), 100, replace=TRUE)
+barplot(table(myvar),col=c("magenta","red","orange","darkgreen","blue","brown"),ylim=c(0,35),main="Barplot of Parent level of ethinicity")
+
 
