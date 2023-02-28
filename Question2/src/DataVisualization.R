@@ -17,3 +17,10 @@ hist(MYFILE$reading.score, main="Histogram of reading score",col='blue')
 
 ###qq norm 
 qqnorm(MYFILE$math.score)
+
+
+spfile <- read.csv('~/Desktop/ACHYUTHAYINALA/Question1/clean_data/Cleaned_StudentsPerformance.csv')
+table(spfile$race.ethnicity)
+nrows <- nrow(spfile)
+percent_group <- table(spfile$race.ethnicity)/n * 100
+pie(percent_group, main = "Groups PieChart", col = c("pink","blue","darkgreen","red","gold"),label=paste(c("group A - ","group B - ","group C - ","group D - ","group E - "),percent_group, "%"))
