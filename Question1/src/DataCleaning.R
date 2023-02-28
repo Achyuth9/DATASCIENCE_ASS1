@@ -1,7 +1,7 @@
 ### This script is to read the raw data file and remove the unwanted data
 
 ### Reading the raw_people_data csv file from the location
-raw_people_data <- read.csv("~/Desktop/SANGITA/MY ASSIGNMENTS/PDS/Ass1/question1/raw_data/raw_people_data.csv")
+raw_people_data <- read.csv("~/Desktop/ACHYUTHAYINALA/Question1/raw_data/RAW_DATA.csv")
 
 ### Viewing the raw_people_data
 raw_people_data
@@ -13,4 +13,4 @@ clean_people_data <- subset(raw_people_data,Age>20)
 clean_people_data
 
 ### Writing clean data into a new csv file and not messing with the original file
-write.csv(clean_people_data,"~/Desktop/SANGITA/MY ASSIGNMENTS/PDS/Ass1/question1/clean_data/clean_people_data.csv")
+write.csv(clean_people_data,"~/Desktop/ACHYUTHAYINALA/Question1/clean_data/CLEAN_DATA.csv")
